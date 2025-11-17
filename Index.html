@@ -1,32 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
-<body>
-    <nav class="crumbs" id="nav" >
-        <ol>
-          <li class="crumb"><a href="/Index.html">Home</a></li>
-          <li class="crumb"><a href="/about.html">About Me</a></li>
-          <li class="crumb"><a href="/learnMore.html">Learn More</a></li>
-          <li class="crumb">Home</li>
-        </ol>
-      </nav>
-    <h1> Marlene Guzman </h1>
-    <div class="img-container">
-        <img src="images/margm2.png" alt="Photo of marlene" />
-      </div>
-    <a href="about.html">Learn about me</a>
-    <h2>Home</h2>
-<p>Hi,  my name is Marlene Guzman and I am passionate about web development and building simple and accessible websites as I work with JTC.</p>
-<ul>
-    <li><strong>Location:</strong> Southern California</li>
-    <li><strong>Focus:</strong> HTML, JS, PYTHON, AI</li>
-    <li><strong>Interests:</strong> software development, learning and building projects that are accessible</li>
+    <link rel="stylesheet" type="text/css" href="css/homeStyles.css" />
+  </head>
+  <body>
+    <nav class="crumbs" id="nav">
+      <ol>
+        <li class="crumb"><a href="/Index.html">Home</a></li>
+        <li class="crumb"><a href="/about.html">About Me</a></li>
+        <li class="crumb" aria-current="page">Home</li>
+      </ol>
+    </nav>
+    <div class="page">
+      <header class="hero">
+        <img
+          src="images/margm2.png"
+          alt="Photo of Marlene"
+          class="hero-image"
+        />
+        <h1 class="hero-name">Marlene Guzman</h1>
+        <p class="tagline">
+          Hi, I'm Marlene Guzman, a software developer who blends code,
+          creativity, and curiosity to build experiences that are accessible,
+          intuitive, and delightfully human.
+        </p>
+      </header>
+      <main>
+        <section class="section">
+          <h2 class="section-title">What I Build</h2>
+          <div class="section-grid">
+            <div class="card">
+              <h3>Web Development</h3>
+              <p>
+                Modern, accessible websites built with HTML, CSS, JavaScript,
+                and soon Python.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Creative Technology</h3>
+              <p>
+                Interactive projects focused on storytelling and user
+                experience.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Accessible Human-Centered Design</h3>
+              <p>
+                Clear intuitive layouts that respect people's time and
+                attention.
+              </p>
+            </div>
+          </div>
+        </section>
+      <section class="section">
+        <h2 class="section-title">Featured Project</h2>
+        <div class="featured">
+          <h3>RISE (Resources for Immigration Support & Emergencies)</h3>
+        </div>
 
-</li>
-</body>
+        <div class="project-description">
+          <p>
+            A passion project I built to help immigrants quickly access the
+            resources, rights, and emergency guidance they may need, all in one
+            place, and without the overwhelm and confusion. It started as a
+            simple question: what if the critical information people desperately
+            need in stressful moments wasn't buried under ten tabs and legal
+            jargon and spread across different websites?
+          </p>
+          <p>
+            I designed RISE to be clean, multilingual, easy-to-navigate,
+            centralized tool. The "Know Your Rights" card is built to be
+            understood at a glance and usable in real situations. RISE is part
+            practical guide, part safety net, and one of the things I'm most
+            proud of building. (WIP)
+          </p>
+
+          <a href="https://github.com/mardb/EmergencyGuidePortal">View RISE</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Quick Facts</h2>
+        <ul class="list">
+          <li>Based in Sunny Southern California</li>
+          <li>Soft spot for sun, animals, and nature.</li>
+          <li>My favorite pasttime is embracing idleness and engaging in activities without a purpose, just for the joy of it.
+          </li>
+          <li>
+            Trilingual brain: I think in English, dream in Spanish, and code in
+            JavaScript.
+          </li>
+          <li>
+            Obsessed with how the human brain works, and personality types
+          </li>
+          <li>
+            Obsessed with learning: lately it's AI tooling, and anything that
+            sharpens my skills.
+          </li>
+          <li>Firm believer that creativity is a technical skill.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Let's Explore</h2>
+        <p class="section-text">Want to know the story behind the code?</p>
+        <div class="hero-links">
+        <a href="about.html" class="btn-primary">Read more about me</a>
+    </div>
+    <h3>Let's Build Something!</h3>
+    <p>Want to see what I've been building?</p>
+    <div class="hero-links">
+        <a href="https://github.com/mardb" class="btn-ghost">View My Github</a>
+    </div>
+      </section>
+    </main>
+    </div>
+  </body>
 </html>

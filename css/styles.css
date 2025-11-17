@@ -1,25 +1,43 @@
-nav {
-  border-bottom: 1px solid black;
+/* Breadcrumb nav */
+#nav {
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
 }
 
 .crumbs ol {
-  list-style-type: none;
-  padding-left: 0;
+  list-style: none;
+  margin: 0 auto;
+  padding: 8px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-width: 1100px;
 }
 
-.crumb {
-  display: inline-block;
+.crumb a {
+  text-decoration: none;
+  color: #555;
 }
 
-.crumb a::after {
-  display: inline-block;
-  color: black;
-  content: ">";
-  font-size: 80%;
+/* separators between crumbs */
+.crumb a::after,
+.crumb[aria-current="page"]::after {
+  content: "›";
+  margin: 0 4px;
+  color: #aaa;
+}
+
+.crumb:last-child a::after,
+.crumb:last-child::after {
+  content: "";
+}
+
+/* Current page */
+.crumb[aria-current="page"] {
   font-weight: bold;
-  padding: 0 3px;
+  color: #000;
 }
-body{
+body {
   font-family: "Georgia", serif;
   line-height: 1.6;
   padding: 40px 0px;
@@ -29,7 +47,7 @@ body{
   margin: 0px auto;
   padding: 32px;
 }
-h1{
+h1 {
   font-size: 48px;
   margin-bottom: 40px;
 }
@@ -38,7 +56,7 @@ h1{
   font-size: 16px;
   line-height: 1.6;
 }
-.right-column .titles h1{
+.right-column .titles h1 {
   margin-top: 0px;
 }
 .about-container {
@@ -47,15 +65,15 @@ h1{
   justify-content: center;
   gap: 30px;
   max-width: 1200px;
-  margin:0 auto 0px;
+  margin: 0 auto 0px;
 }
 
-.img-container{
+.img-container {
   flex: 1;
   display: flex;
   justify-content: center;
 }
-.img-container img{
+.img-container img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -65,12 +83,12 @@ h1{
 .titles h2 {
   font-size: 52px;
 }
-.titles h3{
+.titles h3 {
   font-size: 22px;
   font-weight: normal;
   max-width: 550px;
 }
-.bio p{
+.bio p {
   font-size: 18px;
   margin-bottom: 14px;
 }
@@ -92,7 +110,7 @@ h1{
   font-size: 18px;
   margin-bottom: 6px;
 }
-.outro p{
+.outro p {
   font-size: 18px;
   padding-top: 0;
 }
@@ -105,4 +123,31 @@ h1{
 .contact p,
 .contact a {
   font-size: 18px;
+}
+
+.btn-primary,
+.btn-ghost {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid #111;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.btn-primary {
+  background: #111;
+  color: #fff;
+}
+
+.btn-ghost {
+  background: #fff;
+  color: #111;
+}
+
+.btn-primary:hover {
+  background: #333;
+}
+
+.btn-ghost:hover {
+  background: #f2f2f2;
 }
