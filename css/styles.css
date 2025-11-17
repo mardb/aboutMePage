@@ -1,0 +1,108 @@
+nav {
+  border-bottom: 1px solid black;
+}
+
+.crumbs ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.crumb {
+  display: inline-block;
+}
+
+.crumb a::after {
+  display: inline-block;
+  color: black;
+  content: ">";
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
+}
+body{
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  padding: 40px 0px;
+}
+.page {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 32px;
+}
+h1{
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+.right-column {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.right-column .titles h2{
+  margin-top: 0px;
+}
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin:0 auto 20px;
+}
+
+.img-container{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.img-container img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-width: 800px;
+}
+
+.titles h2 {
+  font-size: 52px;
+}
+.titles h3{
+  font-size: 22px;
+  font-weight: normal;
+  max-width: 550px;
+}
+.bio p{
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.beliefs {
+  margin-bottom: 30px;
+}
+
+.beliefs h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.beliefs ul {
+  padding-left: 20px;
+}
+
+.beliefs li {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.outro p{
+  font-size: 18px;
+  padding-top: 0;
+}
+
+.contact h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.contact p,
+.contact a {
+  font-size: 18px;
+}
